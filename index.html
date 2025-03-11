@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Notatka do nauki - Fiszki Dział 5</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 30px;
+      color: #2c3e50;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #7f8c8d;
+    }
+    .flashcard-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      padding: 20px;
+    }
+    .flashcard {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      width: 80%;
+      max-width: 600px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .flashcard:hover {
+      transform: translateY(-5px);
+      background-color: #e1f5fe;
+    }
+    .question {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #34495e;
+    }
+    .answer {
+      display: none;
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #2c3e50;
+    }
+    .answer ul, .answer ol {
+      margin-left: 20px;
+    }
+    .answer li {
+      margin-bottom: 10px;
+    }
+    .flashcard p {
+      font-size: 18px;
+      color: #2c3e50;
+    }
+    .flashcard-container button {
+      padding: 12px 24px;
+      margin-top: 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .flashcard-container button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Notatka do nauki - Fiszki Dział 5</h1>
+  <p>Kliknij na fiszkę, aby odsłonić odpowiedź.</p>
+
+  <div class="flashcard-container">
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">1. Wymień 4 reformy przeprowadzone przez Napoleona podczas rządów konsulatu?</div>
+      <div class="answer">
+        <ul>
+          <li>Centralizacja władzy i administracji</li>
+          <li>Reformy społeczne i prawne</li>
+          <li>Reformy gospodarcze</li>
+          <li>Reforma edukacji i kultury</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">2. Dlaczego Napoleon przyjął tytuł cesarza Francuzów, a nie cesarza Francji?</div>
+      <div class="answer">
+        Napoleon chciał podkreślić, że nie jest właścicielem państwa, a jedynie panuje nad jego mieszkańcami, co pokazuje jego związek z narodem.
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">3. Okoliczności, w których Napoleon został cesarzem:</div>
+      <div class="answer">
+        <ul>
+          <li>Koronacja odbyła się w 1804 r.</li>
+          <li>Obywatele Francji wyrazili zgodę na koronację w plebiscycie.</li>
+          <li>Napoleon uzyskał władzę absolutną.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">4. Prawda czy fałsz?</div>
+      <div class="answer">
+        <ul>
+          <li>Prawda: Napoleon zawarł konkordat z papiestwem, kończąc walki z Kościołem.</li>
+          <li>Prawda: Prowadzono działania na rzecz rozwoju gospodarki.</li>
+          <li>Fałsz: Napoleon nie pozostawił dotychczasowego podziału administracyjnego.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">5. Uporządkuj wydarzenia w kolejności chronologicznej:</div>
+      <div class="answer">
+        <ol>
+          <li>Traktat w Tylży</li>
+          <li>Bitwa pod Lipskiem</li>
+          <li>Bitwa pod piramidami</li>
+          <li>Zesłanie Napoleona na Wyspę św. Heleny</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">6. Prawda czy fałsz? Dotyczy walk Napoleona z III koalicją antyfrancuską</div>
+      <div class="answer">
+        <ul>
+          <li>Prawda: Upadek Świętego Cesarstwa Rzymskiego i powstanie Związku Reńskiego.</li>
+          <li>Fałsz: Napoleon nie zrealizował planu inwazji na Wyspy Brytyjskie.</li>
+          <li>Prawda: Bitwa trzech cesarzy miała miejsce pod Austerlitz.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">7. Prawda czy fałsz? Dotyczy robotników XVIII w. w Wielkiej Brytanii</div>
+      <div class="answer">
+        <ul>
+          <li>Fałsz: Wynagrodzenie robotników nie było wysokie.</li>
+          <li>Prawda: Do pracy zatrudniano dzieci.</li>
+          <li>Prawda: Zaczęto organizować strajki i stowarzyszenia wzajemnej pomocy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">8. Zaznacz właściwe dokończenie każdego zdania.</div>
+      <div class="answer">
+        <ul>
+          <li>Do zamachu 18 brumaire’a doszło w 1799 r.</li>
+          <li>W wyniku zamachu 18 brumaire’a władzę we Francji objął konsulat.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">9. Zaznacz trzy skutki rewolucji francuskiej.</div>
+      <div class="answer">
+        <ul>
+          <li>Likwidacja systemu feudalnego.</li>
+          <li>Uchwalanie konstytucji opartych na trójpodziale władzy.</li>
+          <li>Straty materialne.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">10. Prawda czy fałsz? Dotyczy przewrotu termidoriańskiego.</div>
+      <div class="answer">
+        <ul>
+          <li>Prawda: Do przewrotu doszło w lipcu 1794 r.</li>
+          <li>Prawda: Po przewrocie uchwalono nową konstytucję.</li>
+          <li>Fałsz: Władza nie przeszła w ręce chłopstwa.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">11. Zaznacz trzy przyczyny przejęcia władzy przez Napoleona.</div>
+      <div class="answer">
+        <ul>
+          <li>Klęski Francuzów w walkach z II koalicją antyfrancuską.</li>
+          <li>Skorumpowane rządy dyrektoriatu.</li>
+          <li>Popularność Napoleona wśród żołnierzy i społeczeństwa.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">12. Przyporządkuj odpowiednie informacje do stanów.</div>
+      <div class="answer">
+        <ul>
+          <li>Stan pierwszy: duchowieństwo, mieszczanie, zwolniony z podatków.</li>
+          <li>Stan drugi: arystokracja, szlachta, przywileje, zwolniony z podatków.</li>
+          <li>Stan trzeci: chłopi, mieszczanie, obciążeni podatkami, brak praw politycznych.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="toggleAnswer(this)">
+      <div class="question">13. Zaznacz właściwe dokończenie każdego zdania.</div>
+      <div class="answer">
+        <ul>
+          <li>Armią Kontynentalną dowodził Jerzy Waszyngton.</li>
+          <li>Bitwa pod Yorktown przesądziła o losach wojny o niepodległość USA.</li>
+          <li>Pokój kończący wojnę podpisano w Wersalu.</li>
+        </ul>
+      </div>
+    </div>
+
+    <button onclick="resetAnswers()">Resetuj odpowiedzi</button>
+  </div>
+
+  <script>
+    function toggleAnswer(card) {
+      const answer = card.querySelector('.answer');
+      answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function resetAnswers() {
+      const answers = document.querySelectorAll('.answer');
+      answers.forEach(answer => answer.style.display = 'none');
+    }
+  </script>
+
+</body>
+</html>
